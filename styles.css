@@ -1,0 +1,113 @@
+body {
+    background-image: url('asset/webbg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: 100% 100%;
+  }
+  
+  
+  .container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .drawer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white; /* Set white background */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-image: url('asset/drawerbg.jpg');
+    
+  }
+  
+  .drawer .profile-info {
+    padding: 20px;
+    border-bottom: 1px solid #6c5cd4;
+     
+    
+  }
+  
+  .drawer .avatar {
+    width: 95px;
+    height: 95px;
+    background-image: url('asset/girl.jpg'); /* Image URL */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  
+  }
+  
+  
+  .drawer .name {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  
+  .drawer .email {
+    font-size: 24px;
+    color: #2f6b2f;
+  }
+  
+  .drawer .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 23px;
+  }
+  
+  .drawer .menu li {
+    padding: 15px 20px;
+    cursor: pointer;
+  }
+  
+  
+  .drawer .menu li:hover {
+    background-color: #7497c2;
+  }
+  
+  .drawer .menu .title {
+    margin-left: 10px;
+    color: #484848ba;
+  }
+  
+  
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    
+  }
+  
+  .close:hover {
+    color: red;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  
